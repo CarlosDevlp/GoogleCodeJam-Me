@@ -11,6 +11,7 @@ package body PancakesOrganizer is
 		pancakes:String:= get_line;		
 	begin
 
+		--validar la existencia de '+' y '-' en el texto
 		if( not checkIfStringContains(pancakes) ) then
 		  	Raise_Exception (Invalid_Value'Identity, "Solo los valores '+'"&
 							 			" y '-' son válidos para cada caso.");	
@@ -20,28 +21,30 @@ package body PancakesOrganizer is
 		
 	end readRow;
 
+	
 	-- procedimiento para voltear los pancakes
 	function flip(pancakes:String;flipCounter:integer:=0) return integer is
 		pancakesCopy:String :=pancakes;
-		cake: Character :=pancakes(1);
-		cakeOtherSide: Character;
+		firstCake: Character :=pancakes(1);
+		otherSide: Character;
 	begin
 		--si es válido todo salir del método
-		if (verify(pancakes)) then
+		if (resuelto(pancakes)) then
 			return flipCounter;
 		end if;
 
-		
-		if(cake='+') then
-			cakeOtherSide:='-';
+		--
+
+		if(firstCake='+') then
+			otherSide:='-';
 		else
-			cakeOtherSide:='+';
+			otherSide:='+';
 		end if;
 
 
 		for i  in 1..pancakes'length  loop
-			exit when (pancakes(i)/=cake);
-			pancakesCopy(i):=cakeOtherSide;
+			exit when (pancakes(i)/=firstCake); --salida
+			pancakesCopy(i):=otherSide;
 		end loop;
 
 		--recursividad

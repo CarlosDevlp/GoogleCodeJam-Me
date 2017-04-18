@@ -1,9 +1,9 @@
+--importando librerias
 with Text_IO, Ada.Strings.Fixed,Ada.Strings.Bounded, Ada.Strings.Unbounded;
-use Text_IO, Ada.Strings.Fixed, Ada.Strings.Unbounded;
-with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
-with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
-with Ada.Float_Text_IO; use Ada.Float_Text_IO;
-with PancakesOrganizer; use PancakesOrganizer;
+use Text_IO, Ada.Strings.Fixed, Ada.Strings.Unbounded; 
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;--entrada y salida de enteros
+with Ada.Float_Text_IO; use Ada.Float_Text_IO;--entrada y salida de decimales
+with PancakesOrganizer; use PancakesOrganizer;--packete nuestro
 with Ada.Exceptions;  use Ada.Exceptions;
 
 
@@ -19,10 +19,12 @@ begin -- Procedure
 			c:=c+1;
 		end loop;
 
+		--excepciones --
 		exception 	
-			--capturar excepción
+			--capturar excepción pre-definida por el sistema
 			when Constraint_error => put_line("El primer valor,"&
 							 " para definir el número de casos,"&
 							 				 " debe ser entero.");			
+			--capturar excepción definida por mí
 			when Error : others => put_line(Exception_Information (Error));
 end Main;
