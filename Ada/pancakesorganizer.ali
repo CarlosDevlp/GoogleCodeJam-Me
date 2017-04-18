@@ -1,0 +1,126 @@
+V "GNAT Lib v4.8"
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_ELABORATION_CODE
+RV SPARK
+
+U pancakesorganizer%b	pancakesorganizer.adb	593474ab NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.bounded%s	a-strbou.adb		a-strbou.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system.concat_4%s	s-conca4.adb		s-conca4.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W text_io%s		text_io.ads		text_io.ali
+
+U pancakesorganizer%s	pancakesorganizer.ads	6cc27946 EE OO PK IL
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-charac.ads		20070912115821 2d3ec45b
+D a-chlat1.ads		20070912115821 2825df20
+D a-except.ads		20120716125141 10fcae55
+D a-finali.ads		20111121113555 52ecdc1b
+D a-flteio.ads		20070406091342 e18a47a0
+D a-inteio.ads		20070406091342 f64b89a4
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-stream.ads		20090409150019 2ca4ee37
+D a-string.ads		20070406091342 90ac6797
+D a-strbou.ads		20101008130255 9806fe84
+D a-strfix.ads		20101008130255 d07c346e
+D a-strmap.ads		20090409150019 9cb836fb
+D a-strsup.ads		20120309145048 a27dcb33
+D a-strunb.ads		20120426100351 3f91d4c5
+D a-tags.ads		20111212115430 6c0509d0
+D a-textio.ads		20130104124955 386df5d4
+D a-tiflio.ads		20090409150019 56fbda09
+D a-tiinio.ads		20090409150019 aa04e5d6
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20110906094621 129923ea
+D i-cstrea.ads		20130102105938 3286f6aa
+D pancakesorganizer.ads	20170418025614 6cc27946
+D pancakesorganizer.adb	20170418033322 45207393
+D system.ads		20140416144310 90249111
+D s-atocou.ads		20111104134501 4a9c6cb4
+D s-atocou.adb		20111121115908 7116b4cf
+D s-conca4.ads		20090420091404 025fe3be
+D s-crtl.ads		20130102105938 1ea48bce
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20111024091915 b95bb341
+D s-finroo.ads		20120426095924 4ff27390
+D s-imgint.ads		20090409150019 02dbe0c2
+D s-parame.ads		20110830140625 b6e20cc0
+D s-pooglo.ads		20110804083314 542f33d0
+D s-secsta.ads		20110830140625 eea35a36
+D s-soflin.ads		20120515094619 24c8153c
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20130104124955 f78bcf95
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stopoo.ads		20111013103733 7b8fbeee
+D s-stposu.ads		20121005142121 ffeba1c5
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+D text_io.ads		20070406091342 45d626c9
+X 1 ada.ads
+16K9*Ada 19e8 24|1r15 1r33 1r54 2r14 2r33 4r6 4r31 5r6 5r29 6r6 6r27
+X 4 a-except.ads
+53K13*Exceptions 355e19 24|6w10 6r31
+93U14*Raise_Exception 24|15s25
+X 6 a-flteio.ads
+20K13*Float_Text_IO[18|45] 24|5w10 5r33
+X 7 a-inteio.ads
+18K13*Integer_Text_IO[19|45] 24|4w10 4r35
+X 10 a-string.ads
+16K13*Strings 35e16 24|1r19 1r37 1r58 2r18 2r37
+X 11 a-strbou.ads
+39K21*Bounded 914e24 24|1w45
+X 12 a-strfix.ads
+18K21*Fixed 251e22 24|1w27 2r26
+X 15 a-strunb.ads
+76K21*Unbounded 489e26 24|1w66 2r45
+X 17 a-textio.ads
+256V13*Get_Line{string} 24|11s35
+263U14*Put_Line 24|19s17
+X 23 pancakesorganizer.ads
+1K9*PancakesOrganizer 7l5 7e22 24|8b14 80l5 80t22
+2X9*Invalid_Value 24|15r42
+3V18*flip{integer} 3>23 3>39 24|19s79 24b18 48s24 49t12
+3s23 pancakes{string} 24|24b23 25r39 26r35 30r28 42r30 43r36
+3i39 flipCounter{integer} 24|24b39 31r32 48r42
+4U19*readRow 4>27 24|10b19 21l13 21t20
+4i27 caseIndex{integer} 24|10b27 19r49
+5V18*verify{boolean} 5>25 24|30s21 52b18 64l13 64t19
+5s25 pancakes{string} 24|52b25 56r29 57r29 62r46
+6V26 checkIfStringContains{boolean} 6>48 24|14s25 67b18 78l13 78t34
+6s48 str{string} 24|67b40 70r29 71r28 71r44
+X 24 pancakesorganizer.adb
+11a17 pancakes{string} 14r47 19r84
+25a17 pancakesCopy{string} 44m25 48r29
+26e17 cake{character} 35r20 43r49
+27e17 cakeOtherSide{character} 36m25 38m25 44r42
+42i21 i{integer} 43r45 44r38
+53i17 positiveSideUpCounter{integer} 58m33 58r56 62r24
+56i21 i{integer} 57r38
+70i21 i{integer} 71r32 71r48
+X 49 text_io.ads
+24K9*Text_IO=24:29 24|1w6 2r5 3w6 3r19
+
